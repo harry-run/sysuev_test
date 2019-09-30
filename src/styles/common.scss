@@ -1,0 +1,251 @@
+$black: #020202;
+$blue: #0182d4;
+$grey: #7b7b7b;
+$light-grey: #f4f4f4;
+$gap: 10px;
+$sidebarSize: 2fr;
+$mainSize: 3fr;
+$exrovision-left-more-row: minmax(auto, 130px);
+$transition-duration-slow: 1100ms;
+$transition-duration-fast: 700ms;
+
+@font-face {
+  font-family: "Avenir-Black";
+  src: url("/font/Avenir/Avenir-Black.ttf");
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("/font/Gotham Cyrillic/Gotham Cyrillic_GothaProReg.otf");
+}
+* {
+  font-family: "Gotham Pro";
+  margin: 0;
+  padding: 0;
+  // opacity: 0.7;
+}
+body {
+  width: 100%;
+}
+img {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.button {
+  text-transform: uppercase;
+  &-more {
+    cursor: pointer;
+    background: none;
+    color: $blue;
+    border: 2px solid $blue;
+    width: 244px;
+    height: 54px;
+    font-size: 24px;
+    text-align: center;
+    padding: 15px 0;
+    &:hover {
+      box-shadow: 0 0 10px rgba($blue, 0.5);
+    }
+  }
+
+  &-read {
+    cursor: pointer;
+    background: none;
+    background-image: url("/img/ic_arrow_drop_down.png");
+    background-repeat: no-repeat;
+    background-position: 80%, 50%;
+    color: rgba(#cacaca, 0.6);
+    border: 2px solid rgba(#cacaca, 0.4);
+    width: 244px;
+    height: 54px;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 10px;
+    &:hover {
+      box-shadow: 0 0 12px rgba($blue, 0.5);
+      border: none;
+    }
+  }
+}
+.transition-slow {
+  transition-duration: $transition-duration-slow !important;
+}
+.transition-fast {
+  transition-duration: $transition-duration-fast !important;
+}
+.exrovision-full-bg {
+  height: 650px !important;
+}
+
+.exrovision-reduced-bg {
+  height: 475px !important;
+}
+
+.art-full-bg {
+  top: 0px !important;
+}
+
+.art-reduced-bg {
+  top: -310px !important;
+}
+
+.art-full-content {
+  margin-top: 30px !important;
+}
+
+.art-reduced-content {
+  margin-top: -180px !important;
+}
+
+.fashion-full-bg {
+  top: 0 !important;
+}
+.fashion-reduced-bg {
+  top: -300px !important;
+}
+.sticky {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 28px;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+.sticky-content {
+  margin-top: 160px;
+}
+
+.social-icon {
+  display: block;
+  width: 45px;
+  height: 45px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid $black;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.tw {
+  background-image: url("/img/tw.png");
+}
+.fb {
+  background-image: url("/img/fb.png");
+}
+.vk {
+  background-image: url("/img/vk.png");
+}
+.height-50 {
+  height: 50px !important;
+}
+.height-350 {
+  height: 50px !important;
+}
+.top-full {
+  margin-top: 150px !important;
+}
+.top-reduce {
+  margin-top: 0px !important;
+}
+.margin-top-70 {
+  margin-top: 70px !important;
+}
+.margin-top-0 {
+  margin-top: 0px !important;
+}
+
+@keyframes marginAnimation {
+  from {
+    margin-top: 60px;
+  }
+  to {
+    margin-top: 0px;
+  }
+}
+
+.marginAnim {
+  animation-iteration-count: 1;
+  animation: marginAnimation 1200ms;
+}
+.marginAnimNone {
+  animation: none;
+}
+
+@keyframes marginTopAnimation {
+  from {
+    margin-top: 10px;
+  }
+  to {
+    margin-top: 0px;
+  }
+}
+
+.marginTopAnim {
+  animation-iteration-count: 1;
+  animation: marginAnimation 1200ms;
+}
+.marginTopAnimNone {
+  animation: none;
+}
+
+.top-20 {
+  margin-top: -20px !important;
+  transition-duration: 1s;
+}
+.transition-delay-100 {
+  transition-delay: 100ms !important;
+}
+.transition-delay-300 {
+  transition-delay: 300ms !important;
+}
+.transition-delay-500 {
+  transition-delay: 500ms !important;
+}
+.transition-delay-700 {
+  transition-delay: 700ms !important;
+}
+.transition-delay-900 {
+  transition-delay: 900ms !important;
+}
+
+.transition-duration-100 {
+  transition-duration: 300ms !important;
+}
+.transition-duration-500 {
+  transition-duration: 900ms !important;
+}
+.transition-duration-700 {
+  transition-duration: 1200ms !important;
+}
+.transition-duration-900 {
+  transition-duration: 1500ms !important;
+}
+
+.margin-left-50 {
+  margin-left: -900px !important;
+  z-index: -100;
+}
+
+.margin-left-100 {
+  margin-left: -900px !important;
+  z-index: -100;
+}
+.margin-left-150 {
+  margin-left: -1100px !important;
+  z-index: -100;
+}
+.margin-left-200 {
+  margin-left: -1200px !important;
+  z-index: -100;
+}
+.margin-left-250 {
+  margin-left: -1500px !important;
+  z-index: -100;
+}
